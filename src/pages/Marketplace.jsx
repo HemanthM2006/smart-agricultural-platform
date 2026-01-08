@@ -4,22 +4,51 @@ import ListingCard from "../components/ListingCard"
 
 export default function Marketplace() {
   return (
-    <>
-      <h2>Farmer Marketplace</h2>
+    <div className="market-page">
+      <header className="page-header">
+        <h1>Farmer Marketplace</h1>
+        <p className="page-subtitle">
+          List your harvested crops and connect directly with buyers
+        </p>
+      </header>
 
-      <input placeholder="Crop Name" />
-      <input placeholder="Quantity Available" />
-      <input placeholder="Price per Unit" />
-      <input placeholder="Contact Number" />
-      <button>List Crop</button>
+      <div className="card market-form-card">
+        <h3>List a New Crop</h3>
 
-      <h2>Available Listings</h2>
+        <div className="form-grid">
+          <div className="form-group">
+            <label>Crop Name</label>
+            <input placeholder="Eg: Wheat" />
+          </div>
 
-      <div className="grid">
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
+          <div className="form-group">
+            <label>Quantity Available</label>
+            <input placeholder="Eg: 25 Quintals" />
+          </div>
+
+          <div className="form-group">
+            <label>Price per Unit</label>
+            <input placeholder="Eg: ₹2300 / Quintal" />
+          </div>
+
+          <div className="form-group">
+            <label>Contact Number</label>
+            <input placeholder="Eg: 9XXXXXXXXX" />
+          </div>
+        </div>
+
+        <button className="primary-btn">List Crop</button>
       </div>
-    </>
+
+      <section className="market-listings">
+        <h2>Available Listings</h2>
+
+        <div className="grid">
+          <ListingCard />
+          <ListingCard />
+          <ListingCard />
+        </div>
+      </section>
+    </div>
   )
 }

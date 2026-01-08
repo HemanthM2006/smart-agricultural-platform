@@ -6,16 +6,25 @@ import CropRecommendation from "../components/CropRecommendation"
 
 export default function Dashboard() {
   return (
-    <>
-      <h2>Farmer Dashboard</h2>
+    <div className="dashboard">
+      <header className="page-header">
+        <h1>Farmer Dashboard</h1>
+        <p className="page-subtitle">
+          Live soil conditions, sustainability insights, and smart crop suggestions
+        </p>
+      </header>
 
-      <div className="grid">
-        <SoilCard />
-        <CarbonInsight />
-      </div>
+      <section className="dashboard-section">
+        <div className="grid">
+          <SoilCard />
+          <CarbonInsight />
+        </div>
+      </section>
 
-      <h2>AI Crop Recommendations</h2>
-      <CropRecommendation />
-    </>
+      <section className="dashboard-section">
+        <h2>AI Crop Recommendations</h2>
+        <CropRecommendation />
+      </section>
+    </div>
   )
 }
