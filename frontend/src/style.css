@@ -1,0 +1,123 @@
+/* frontend/src/style.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7f4;
+  color: #263238;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background: #2e7d32;
+  padding: 16px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links a {
+  color: #e8f5e9;
+  margin-left: 22px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* LAYOUT */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 28px;
+}
+
+h2 {
+  margin-bottom: 18px;
+  font-size: 26px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+/* GRID & CARDS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.card p {
+  margin: 6px 0;
+  color: #607d8b;
+}
+
+/* FORMS */
+
+input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2e7d32;
+}
+
+/* BUTTONS */
+
+button {
+  background: #2e7d32;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+
+/* SMALL HELPERS */
+
+.form-card {
+  max-width: 420px;
+}
